@@ -39,7 +39,13 @@ export default function Layout() {
   Lend Book
 </Link>
 <Link to="/lendings">View Lendings</Link>
-
+<Link
+  to="/reports/active-loans"
+  className="text-blue-600 hover:underline"
+>
+  View Active Loans Report
+</Link>
+<Link to="/history" className="text-blue-600">🕓 Member History</Link>
 
     <Link
       to="/login"

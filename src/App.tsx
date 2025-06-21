@@ -7,7 +7,9 @@ import Members from "./pages/Members";
 import AddMember from "./pages/AddMember";
 import Login from "./pages/Login";
 import LendBook from "./pages/LendBook";
-import LendingList from "./pages/LendingList"; // ✅ NEW
+import LendingList from "./pages/LendingList"; //
+import ActiveLoans from "./pages/ActiveLoans";
+import MemberHistory from "./pages/MemberHistory";
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
         <Route path="members/new" element={<AddMember />} />
         <Route path="login" element={<Login />} />
         <Route path="lend" element={<LendBook />} />
-        <Route path="lendings" element={<LendingList />} /> {/* ✅ NEW */}
+        <Route path="lendings" element={<LendingList />} /> 
+        <Route path="reports/active-loans" element={<ActiveLoans />} />
+        <Route path="history" element={<MemberHistory />} />
       </Route>
     </Routes>
   );
